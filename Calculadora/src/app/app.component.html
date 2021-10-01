@@ -1,0 +1,29 @@
+<div class="container">
+
+    <form class="form-group">
+        <h1>{{title}}</h1>
+        <div class="mb-2 ">
+
+
+            <label for="exampleInputEmail1" class="form-label">Ingrese un numero:</label><br>
+            <input type="number" [(ngModel)]="numero1" name="numero1" />
+
+        </div>
+        <div class="mb-3">
+            <label for="exampleInputPassword1" class="form-label">Ingrese un numero:</label><br>
+            <input type="number" [(ngModel)]="numero2" name="numero2" />
+        </div>
+        <div class="mb-3">
+            <label for="exampleInputPassword1" class="form-label">Resultado:</label><br>
+            <input type="number" [(ngModel)]="resultado" name="resultado" /><br>
+
+        </div>
+        <div class="btn-group" role="group" aria-label="Basic mixed styles example">
+            <button class="btn btn-primary" value="Sumar" type="button" (click)="sumar()">Sumar</button>
+            <button class="btn btn-danger" value="Restar" type="button" (click)="restar()">Restar</button>
+            <button class="btn btn-success" value="Restar" type="button" (click)="multiplicar()">Multiplicar</button>
+            <button class="btn btn-info" value="Restar" type="button" (click)="dividir()">Dividir</button>
+        </div>
+
+    </form>
+</div>
